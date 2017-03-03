@@ -1,0 +1,156 @@
+%______________________________________________________________________________________________________________________
+% @brief    LaTeX2e Resume for Himanshu Pal
+\documentclass[margin,line]{resume}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{datenumber}
+\usepackage{datetime}
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+  
+\newcounter{dateone}
+\newcounter{datetwo}
+
+\newcommand{\difftoday}[3]{%
+      \setmydatenumber{dateone}{\the\year}{\the\month}{\the\day}%
+      \setmydatenumber{datetwo}{#1}{#2}{#3}%
+      \addtocounter{datetwo}{-\thedateone}%
+      \the\numexpr-\thedatetwo/365\relax\space year(s),
+      \the\numexpr(-\thedatetwo - (-\thedatetwo/365)*365)/30\relax\space month(s)
+}
+%______________________________________________________________________________________________________________________
+\begin{document}
+\name{\Large Himanshu Pal}  \address{mobile: +91-8826567807 \\ email: hp.iiita@gmail.com}
+%\hfill e-mail: hp.iiita@gmail.com \vspace{1mm}
+\begin{resume}
+
+    %__________________________________________________________________________________________________________________
+    % Contact Information
+    %\section{\mysidestyle Contact\\Information}
+
+    %\hfill mobile: +91-8826567807 \vspace{1mm}\\\vspace{1mm}
+    %\hfill web: fasihahmad.github.com \vspace{1mm}\\\vspace{1mm}
+    %\hfill e-mail: hp.iiita@gmail.com \vspace{1mm}
+    %__________________________________________________________________________________________________________________
+    % About Me
+%    \section{\mysidestyle About Me}
+%      \begin{itemize}
+%        \item About \difftoday{2012}{12}{17} of software development experience, building software in industry.
+%		\item Currently holds a position of Software Engineer, focused on requirement analysis, design, development \& delivery of products with teamwork.
+%		\item Has been a proficient coder in multiple languages which includes Python \& JavaScript.
+%	\end{itemize}
+
+    %__________________________________________________________________________________________________________________
+    % Education
+    \section{\mysidestyle Education}
+
+    \textbf{Indian Institute of Information Technology, Allahabad} \hfill \textbf{2011 -- 2015}\vspace{0mm}\\\vspace{0mm}%
+    \textsl{B.Tech (Information Technology)} \hfill \textsl{CGPA: 8.00}
+
+    \textbf{Christ Church Boys' Senior Secondary School, Jabalpur(CBSE)} \hfill \textbf{2010 -- 2011}\vspace{0mm}\\\vspace{0mm}%
+    \textsl{Intermediate (Science)} \hfill \textsl{Percentage: 76.0\%}
+
+    \textbf{Christ Church Boys' Senior Secondary School, Jabalpur(CBSE)} \hfill \textbf{2008 -- 2009}\vspace{0mm}\\\vspace{0mm}%
+    \textsl{Matriculation } \hfill \textsl{Percentage: 87.4\%}
+    %__________________________________________________________________________________________________________________
+    % Computer Skills
+    \section{\mysidestyle Technical Skills}
+     \begin{itemize}
+      \item Programming Languages: Python, JavaScript, C, C++, Java, Shell Scripting
+      \item Frameworks/Libraries: Django, DRF, Solr, RabbitMQ, django-celery, jQuery, NumPy, SciPy, scikit-learn, R, Google Maps API, Socket.IO, Node.js, 
+      \item Systems/Tools : Pycharm, Jenkins, Redmine, Git, Vim
+     \end{itemize}
+    %__________________________________________________________________________________________________________________
+%    % Computer Interest
+%     \section{\mysidestyle Technical Interest}
+%        Cloud Computing, Virtualization, Cryptography \& Network Security, Ethical Hacking, Algorithm Design and Web \& Mobile Technologies.
+%    %__________________________________________________________________________________________________________________
+    % Professional Experience
+    \section{\mysidestyle Work Experience}
+
+    \textbf{HT Media, Gurgaon}\\
+           \textsl{Senior Software Developer - HTCampus} \hfill \textsl{Sep 2015 -- present} \vspace{0mm}\\\vspace{0mm}%
+           \textsl{Software Developer - Bidnbid/HTCampus} \hfill \textsl{July 2015 -- Sep 2016} \vspace{0mm}\\\vspace{0mm}%
+           \textsl{Internship - Bidnbid} \hfill \textsl{Jan 2015 -- Jul 2015} \vspace{0mm}\\\vspace{0mm}%
+    \begin{itemize}
+    
+     \item \textsl{Design and Development of Digital Marketing \& Lead Management System}
+        \begin{itemize}
+            \item Developed Distributed Mail Delivery and Tracking System(open count, click count etc) which
+sends mails at 400 mails/sec/server.
+            \item Developed User Activity Tracking System  which sends user's responses as leads.
+			\item Developed Attribute Based Recommendation System(AssistMe Module) using Solr.
+        \end{itemize}
+%   \end{itemize}
+
+%    \item \textsl{Design and Development of HTCampus 2.0}
+%        \begin{itemize}
+%            \item Developed Attribute Based Recommendation System(AssistMe Module).
+%            \item Developed Backend for Exam Predictor \& Ranking Modules.
+%        \end{itemize}
+ %  \end{itemize}
+
+
+    \item \textsl{Design and Development of Bidnbid}
+        \begin{itemize}
+            \item Developed​ Two-factor authentication​ and simplified user registration flow.
+            \item Developed ​Autosuggestion ​feature for Real Estate Domain using Solr.
+            \item Developed CRUD admin for SEO Team for modifying metadata of each page dynamically.
+        \end{itemize}
+  % \end{itemize}
+
+
+
+%\textbf{Media Agility, Gurgaon}   \hfill \textsl{Dec 2012 -- Jan 2014} \vspace{0mm}\\\vspace{0mm}%
+%           \textsl{Software Developer - Financial Tracking}\\
+%    \begin{itemize}
+%
+%     \item \textsl{Development of Compliance Regulatory Software System}
+%        \begin{itemize}
+%            \item Involved in full-stack development of web application for portfolio compliance monitoring and alerting service.
+%        \end{itemize}
+%
+    \end{itemize}
+
+    
+    % Other Projects
+    \section{\mysidestyle Academic Projects}
+    \textbf{Malicious URL Detection} \hfill \textsl{Jul 2014 -- Nov 2014} \vspace{0mm}\\\vspace{0mm}%
+       \begin{itemize}
+	        \item Implementation of Naive Bayes and Multi level Artificial Neural Networks in Java and their comparison on URL dataset using R.
+       \end{itemize}
+
+    \textbf{Sentiment Analysis for Hindi Text} \hfill \textsl{Jan 2014 -- May 2014} \vspace{0mm}\\\vspace{0mm}%
+       \begin{itemize} 
+            \item Implementation of SVM binary linear classifier using NLP tools and scikit learn libraries in Python to classify sentence into positive and negative classes.
+       \end{itemize}
+
+
+    \textbf{Speaker Independent Human Speech Recognition in Hindi} \hfill \textsl{Jul 2013 -- Nov 2013} \vspace{0mm}\\\vspace{0mm}%
+       \begin{itemize}
+            \item Implementation of Baum Welch, Backward/Forward and Viterbi Algorithms in C++ for training HMM model to map speech signal to the corresponding (word model)digit.
+       \end{itemize}
+    %__________________________________________________________________________________________________________________
+    % Other Projects
+
+    %\section{}
+
+    % Achievements
+    \section{\mysidestyle Achievements}
+    \begin{itemize}
+	        \item Selected for Online Coding Event Overnite IIT Kharagpur and came 8​\textsuperscript{th}​ in onsite Round
+	        \item Participated and solved 300+ problems in hackerearth, codechef and SPOJ
+	        \item Solved more than 200 problems in Brilliant.org and achieved level 4
+	        \item Topped the entrance exam of Momentum coaching institute and got scholarship of Rs 36,000
+%	        \item Came 3​ rd​ in Enviro -2008 State Level Quiz Competition
+   \end{itemize}
+
+    % Non Work Projects/Open Source Contributions/Workshops/Courses
+%______________________________________________________________________________________________________________________
+\hfill \textsl{Compiled on \monthyeardate\today}
+
+\end{resume}
+\end{document}
+
+%______________________________________________________________________________________________________________________
+% EOF
