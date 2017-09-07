@@ -281,7 +281,7 @@
 \newdimen\resumewidth
 
 \resumewidth=7.5in
-\sectionskip=3.5ex plus 1ex minus -.2ex % values stolen from LaTeX
+\sectionskip=2.5ex plus 1ex minus -.2ex % values stolen from LaTeX
 
 \def\newsectionwidth#1{%
 		     \sectionwidth=#1
@@ -442,7 +442,7 @@
 \let\@@section\relax
 \def\ds@overlapped{\ifx\@@section\relax\newsectionwidth{0.5in}\let\@@section\unboxed@sectiontitle\fi}
 %\def\ds@margin{\ifx\@@section\relax\newsectionwidth{1.3in}\let\@@section\boxed@sectiontitle\fi}
-\def\ds@margin{\ifx\@@section\relax\newsectionwidth{1.1in}\let\@@section\boxed@sectiontitle\fi}
+\def\ds@margin{\ifx\@@section\relax\newsectionwidth{1in}\let\@@section\boxed@sectiontitle\fi}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DEFAULTS: (some of them)
@@ -774,7 +774,7 @@
 \topmargin 0pt
 \headheight 0pt
 \headsep 0pt
-\textheight 9in
+\textheight 8in
 \parindent 0pt
 \topmargin 0in
 \oddsidemargin 0pt
@@ -786,9 +786,9 @@
 \def\@listI{\leftmargin\leftmargini
 \topsep 0pt 
 \parskip 0pt
-\partopsep 10pt plus 2pt
-\parsep 2pt plus 2pt
-\itemsep \parsep}
+\partopsep 9pt plus 2pt
+\parsep 1pt plus 2pt
+\itemsep 1pt plus 2pt}
 
 \pagestyle{empty}  % don't want page numbers
 
@@ -839,6 +839,5 @@
 \newcommand{\mysidestyle}{\small\sc}
 \newcommand{\myheadingstyle}{\sl}
 \newcommand{\mysubheadingstyle}{\sl}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
