@@ -8,7 +8,7 @@
 
 \newdateformat{monthyeardate}{%
   \monthname[\THEMONTH], \THEYEAR}
-  
+
 \newcounter{dateone}
 \newcounter{datetwo}
 
@@ -47,7 +47,7 @@
     \section{\mysidestyle Education}
 
     \textbf{Indian Institute of Information Technology, Allahabad} \hfill \textbf{2011 -- 2015}\vspace{0mm}\\\vspace{0mm}%
-    \textsl{B.Tech (Information Technology)} \hfill \textsl{CGPA: 8.00}
+    \textsl{B.Tech (Information Technology)} \hfill \textsl{CGPA: 7.99}
 
     \textbf{Christ Church Boys' Senior Secondary School, Jabalpur(CBSE)} \hfill \textbf{2010 -- 2011}\vspace{0mm}\\\vspace{0mm}%
     \textsl{Intermediate (Science)} \hfill \textsl{Percentage: 76.0\%}
@@ -56,11 +56,12 @@
     \textsl{Matriculation } \hfill \textsl{Percentage: 87.4\%}
     %__________________________________________________________________________________________________________________
     % Computer Skills
-    \section{\mysidestyle Technical Skills}
+    \section{\mysidestyle Technical \\ Skills}
+	\vspace{0mm}
      \begin{itemize}
       \item Programming Languages: Python, JavaScript, C, C++, Java, Shell Script
-      \item Frameworks/Libraries: Django, DRF, Solr, RabbitMQ, django-celery, jQuery, NumPy, SciPy, scikit-learn, R, Google Maps API, ElasticSearch, Ansible
-      \item Systems/Tools : Pycharm, Jenkins, Redmine, Git, Vim
+      \item Frameworks/Libraries: Django, Solr, RabbitMQ, jQuery, NumPy, SciPy, scikit-learn, R, Google Maps API, ElasticSearch, Ansible, Supervisor, React, Mobx, ES6
+      \item Systems/Tools : Pycharm, Jenkins, Redmine, Git, Vim, Phabricator, Byobu
      \end{itemize}
     %__________________________________________________________________________________________________________________
 %    % Computer Interest
@@ -72,31 +73,31 @@
 
 
     \textbf{THIRD WAVE SOLUTIONS PRIVATE LTD, Gurgaon}\\
-           \textsl{Senior Software Developer - Tofler} \hfill \textsl{Apr 2016 -- present} \vspace{0mm}\\\vspace{0mm}%
+           \textsl{Senior Software Developer} \hfill \textsl{Apr 2017 -- present} \vspace{0mm}\\\vspace{0mm}%
     \begin{itemize}
-    
-     \item \textsl{Design and Development of tofler.in - Data Analytics Platform on company data) }
-        \begin{itemize}
-            \item Developed GraphQL Based Rest API and ElasticSearch query builder.
-            \item Developed Continuous Integration Pipeline for running tests and generating docs.
-            \item Build Crawlers and Processors for extracting and processing company data.
-           
+
+%     \item \textsl{Design and Development of tofler.in's Data Analytics Platform }
+%        \begin{itemize}
+            \item Built GraphQL endpoints(supporting filter, sort, pagination, aggregation etc) by mapping requests to elasticsearch Query DSL and postprocessing query response.
+%            \item Built Event Extraction and Processing Pipeline by tracking changes in database rows.
+            \item Built Distributed Crawlers and Processors(for html,pdf,xls files).Key aspects includes Task Lock Mechanism, Alert/Monitoring System and Dynamic Provisioning.
+           \item Co-developed Company360(single page application in React/Mobx) whose primary features includes Modular Asset Packaging, CSS Transitions and Maintainable App State management.
         \end{itemize}
-    \end{itemize}
-    
+%    \end{itemize}
+
     \textbf{HT MEDIA LTD, Gurgaon}\\
-           \textsl{Senior Software Developer - HTCampus} \hfill \textsl{Sep 2016 -- Apr 2016} \vspace{0mm}\\\vspace{0mm}%
-           \textsl{Software Developer - Bidnbid/HTCampus} \hfill \textsl{July 2015 -- Sep 2016} \vspace{0mm}\\\vspace{0mm}%
-           %\textsl{Internship - Bidnbid} \hfill \textsl{Jan 2015 -- Jul 2015} \vspace{0mm}\\\vspace{0mm}%
+           \textsl{Senior Software Developer} \hfill \textsl{Sep 2016 -- Apr 2017} \vspace{0mm}\\\vspace{0mm}%
+           \textsl{Software Developer} \hfill \textsl{July 2015 -- Sep 2016} \vspace{0mm}\\\vspace{0mm}%
+           \textsl{Software Developer Intern} \hfill \textsl{Jan 2015 -- July 2015} \vspace{0mm}\\\vspace{0mm}%
     \begin{itemize}
-    
-     \item \textsl{Design and Development of Digital Marketing \& Lead Management System}
-        \begin{itemize}
-            \item Developed Distributed Mail Delivery and Tracking System(open count, click count etc) which
-sends mails at 400 mails/sec/server.
-            \item Developed User Activity Tracking System  which sends user's responses as leads.
-		    \item Developed Attribute Based Recommendation System(AssistMe Module) using Solr.
-        \end{itemize}
+
+ %    \item \textsl{Design and Development of HTCampus.com's Lead Management System}
+  %      \begin{itemize}
+			\item Led the development of AssistMe tool (recommends best fit colleges based on user's preferences) by implementing custom scoring and matching algorithm in Java.
+            \item Developed Distributed Mail Delivery and Tracking System(sends 400 mails/sec/server) by setting up Celery task queue which resulted in saving significant third party costs.
+            \item Developed Response Based Lead Capturing System.It's ability to track user's activity, intelligent lead bucketing/filtering to fulfill deficit orders helped it in becoming primary revenue channel.
+%		    \item As the Lead Software developer for this project, I was working on providing concrete solutions to the design needs put forth by the Product Architect.
+     %   \end{itemize}
 %   \end{itemize}
 
 %    \item \textsl{Design and Development of HTCampus 2.0}
@@ -107,16 +108,16 @@ sends mails at 400 mails/sec/server.
 %   \end{itemize}
 
 
-    \item \textsl{Design and Development of Bidnbid.com - Online Real Estate Auction Platform}
-        \begin{itemize}
-            \item Developed​ Two-factor authentication​ and simplified user registration flow.
-            \item Developed Mark Your Price and Multiselect components using JQuery.
-            \item Developed CRUD admin for SEO Team for modifying metadata of each page dynamically.
-        \end{itemize}
+  %  \item \textsl{Design and Development of Bidnbid.com - Online Real Estate Auction Platform}
+    %    \begin{itemize}
+            \item Developed Interactive Search using Solr's geospatial queries and Google Maps API.
+            \item Developed dozens of site wide features including 2-factor authentication, autosuggestion, payment gateway integration, generic backend for ranking and exam predictor modules, SEO management dashboards etc.
+           % \item Responsible for Deployment of two projects and Developed ​autosuggestion, 2-factor authentication and multiselect components using JQuery.
+      %  \end{itemize}
 
 	    %\item \textsl{Internship}
         %\begin{itemize}
-        
+
          %   \item Developed Interactive Search using Solr's geospatial queries and Google Map API.
          %   \item Developed ​Autosuggestion ​feature for Real Estate Domain using Solr.
         %\end{itemize}
@@ -125,34 +126,34 @@ sends mails at 400 mails/sec/server.
 
     \end{itemize}
 
-    \section{\mysidestyle Internship}
+%    \section{\mysidestyle Internship}
 
 
-    \textbf{HT Media LTD, Gurgaon}\\
-    \textsl{Internship - Bidnbid} \hfill \textsl{Jan 2015 -- Jul 2015} \vspace{0mm}\\\vspace{0mm}%
-    	\begin{itemize}
-			\item Developed Interactive Search using Solr's geospatial queries and Google Map API.
-            \item Developed ​Autosuggestion ​feature for Real Estate Domain using Solr.
-        \end{itemize}
-    	
-    	\newpage
-    	\noindent\rule{15.3cm}{0.4pt}
-		\vspace{2mm}
+    %\textbf{HT Media LTD, Gurgaon}\\
+%    \textsl{Software Engineering Intern} \hfill \textsl{Jan 2015 -- July 2015} \vspace{0mm}\\\vspace{0mm}
+    %	\begin{itemize}
+	%		\item Developed Interactive Search using Solr's geospatial queries and Google Map API.
+     %       \item Developed ​Autosuggestion ​feature for Real Estate Domain using Solr.
+      %  \end{itemize}
+
+    	%\newpage
+    	%\noindent\rule{15.3cm}{0.4pt}
+		%\vspace{2mm}
 %\clearpage
     % Other Projects
     \section{\mysidestyle Academic Projects}
-    \textbf{Malicious URL Detection} \hfill \textsl{Jul 2014 -- Nov 2014} \vspace{0mm}\\\vspace{0mm}%
+    \textbf{Malicious URL Detection} \hfill \textsl{July 2014 -- Nov 2014} \vspace{0mm}\\\vspace{0mm}%
        \begin{itemize}
 	        \item Implementation of Naive Bayes and Multi level Artificial Neural Networks in Java and their comparison on URL dataset using R.
        \end{itemize}
 
     \textbf{Sentiment Analysis for Hindi Text} \hfill \textsl{Jan 2014 -- May 2014} \vspace{0mm}\\\vspace{0mm}%
-       \begin{itemize} 
+       \begin{itemize}
             \item Implementation of SVM binary linear classifier using NLP tools and scikit learn libraries in Python to classify sentence into positive and negative classes.
        \end{itemize}
 
 
-    \textbf{Speaker Independent Human Speech Recognition in Hindi} \hfill \textsl{Jul 2013 -- Nov 2013} \vspace{0mm}\\\vspace{0mm}%
+    \textbf{Speaker Independent Human Speech Recognition in Hindi} \hfill \textsl{July 2013 -- Nov 2013} \vspace{0mm}\\\vspace{0mm}%
        \begin{itemize}
             \item Implementation of Baum Welch, Backward/Forward and Viterbi Algorithms in C++ for training HMM model to map speech signal to the corresponding (word model)digit.
        \end{itemize}
@@ -162,14 +163,14 @@ sends mails at 400 mails/sec/server.
     %\section{}
 
     % Achievements
-    \section{\mysidestyle Achievements}
-    \begin{itemize}
-	        \item Selected for Online Coding Event Overnite IIT Kharagpur and came 8​\textsuperscript{th}​ in onsite Round
-	        \item Participated and solved 200+ problems in hackerearth, codechef and SPOJ
-	        \item Solved more than 200 problems in Brilliant.org and achieved level 4
-	        \item Topped the entrance exam of Momentum coaching institute and got scholarship of Rs 36,000
+    %\section{\mysidestyle Achievements}
+    %\begin{itemize}
+	%        \item Selected for Online Coding Event Overnite IIT Kharagpur and came 8​\textsuperscript{th}​ in onsite Round
+	%        \item Participated and solved 200+ problems in hackerearth and SPOJ
+	%        \item Solved more than 200 problems in Brilliant.org and achieved level 4
+	%        \item Topped the entrance exam of Momentum coaching institute and got scholarship of Rs 36,000
 %	        \item Came 3​ rd​ in Enviro -2008 State Level Quiz Competition
-   \end{itemize}
+   %\end{itemize}
 
     % Non Work Projects/Open Source Contributions/Workshops/Courses
 %______________________________________________________________________________________________________________________
