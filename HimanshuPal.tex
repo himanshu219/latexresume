@@ -5,7 +5,7 @@
 \usepackage{graphicx}
 \usepackage{datenumber}
 \usepackage{datetime}
-
+\usepackage{hyperref}
 \newdateformat{monthyeardate}{%
   \monthname[\THEMONTH], \THEYEAR}
 
@@ -30,9 +30,9 @@
 %    \section{\mysidestyle About Me}
 %      \begin{itemize}
 %        \item About \difftoday{2012}{12}{17} of software development experience, building software in industry.
-%		\item Currently holds a position of Software Engineer, focused on requirement analysis, design, development \& delivery of products with teamwork.
-%		\item Has been a proficient coder in multiple languages which includes Python \& JavaScript.
-%	\end{itemize}
+%       \item Currently holds a position of Software Engineer, focused on requirement analysis, design, development \& delivery of products with teamwork.
+%       \item Has been a proficient coder in multiple languages which includes Python \& JavaScript.
+%   \end{itemize}
 
     %__________________________________________________________________________________________________________________
     % Education
@@ -42,18 +42,31 @@
     \textsl{B.Tech (Information Technology)} \hfill \textsl{CGPA: 7.99}\vspace{2mm}\\
     \textbf{Christ Church Boys' Senior Secondary School, Jabalpur(CBSE)} \hfill \textbf{2003 -- 2011}\vspace{0mm}\\\vspace{0mm}%
     \textsl{Intermediate (Science)} \hfill \textsl{Percentage: 76.0\%}\vspace{0mm}\\\vspace{0mm}%
-	\textsl{Matriculation } \hfill \textsl{Percentage: 87.4\%}
-	
+    \textsl{Matriculation } \hfill \textsl{Percentage: 87.4\%}
+
     \section{\mysidestyle Technical \\ Skills}
-	\vspace{0mm}
-	\textbf{Programming Languages:}	Python, JavaScript, C, C++, Java, Shell Script \\
-%     \begin{itemize}
-%      \textbf{Programming Languages}
-%      \begin{itemize}
-%      	  \item Expert: Python, JavaScript, C, C++
-%      	  \item Intermediate: Java, Shell Script
-%      \end{itemize}
-      \textbf{Frameworks/Libraries/VCS:} Django, jQuery, NumPy, SciPy, scikit-learn, Solr, ElasticSearch, MySQL, PostgreSQL, RabbitMQ, Ansible, Supervisor, React, Mobx, ES6, Git
+    \vspace{0mm}
+%   \textbf{Programming Languages:} Python, JavaScript, NodeJS, C, C++, Java, Scala, Shell Script \\
+    % \begin{itemize}
+     \textbf{Programming Languages}
+     \begin{itemize}
+          \item Expert: Python, NodeJS, JavaScript, C, C++
+          \item Intermediate: Scala, Golang, Shell Script
+     \end{itemize}
+     \textbf{Cloud Platforms}
+     \begin{itemize}
+          \item Expert: Amazon Web Services
+          \item Intermediate: Azure and Google Web Services
+     \end{itemize}
+     \textbf{Important Links}
+     \begin{itemize}
+          \item Github: \url{https://github.com/himanshu219}
+          \item Linkedin: \url{https://www.linkedin.com/in/himanshu-pal}
+          \item Hackerearth: \url{http://www.hackerearth.com/@himanshu_pal}
+          \item Blogs: \url{https://www.sumologic.com/blog/author/hpal/}
+          \item Stackoverflow: \url{https://stackoverflow.com/users/2699636/himanshu219}
+     \end{itemize}
+      \textbf{Frameworks/Libraries/VCS:} Django, jQuery, NumPy, SciPy, scikit-learn, Solr, ElasticSearch, MySQL, PostgreSQL, RabbitMQ, Ansible, Supervisor, React, Mobx, ES6, Git, AWS, Azure, GCP
       %\item \textbf{Tools/VCS:} Pycharm, Jenkins, Redmine, Git, Vim, Phabricator, Byobu
  %    \end{itemize}
     %__________________________________________________________________________________________________________________
@@ -63,30 +76,43 @@
 %    %__________________________________________________________________________________________________________________
     % Professional Experience
     \section{\mysidestyle Work Experience}
-    \textbf{THIRD WAVE SOLUTIONS PRIVATE LTD, Gurgaon}\\
-           \textsl{Senior Software Developer} \hfill \textsl{Apr 2017 -- present} \vspace{1mm}%
+    \textbf{Sumo Logic, Noida}\\
+        \textsl{Application Developer} \hfill \textsl{Nov 2017 -- Present}
+        \vspace{1mm}%
+        \begin{itemize}
+            \item Developed several event based solution to collect logs from various monitoring services like AWS Cloudwatch, Azure Monitor, AWS Security Hub etc supporting features like failure handling, chunking, compression, state management and deployment templates(ARM and Cloudformtion).Technologies used were nodejs, python, Azure Functions, EventHub, Service Bus, AWS Lambda,API Gateway etc.AWS specific ones are included in \href{https://serverlessrepo.aws.amazon.com/applications}{serverless repo}
+            \subitem \href{https://help.sumologic.com/Send-Data/Collect-from-Other-Data-Sources/Azure_Blob_Storage}{Azure Blob Storage Collection}: Event based collection pipeline for shipping monitoring data from Azure Blob Storage to an HTTP endpoint.
+            \subitem \href{https://help.sumologic.com/Send-Data/Collect-from-Other-Data-Sources/Amazon-CloudWatch-Logs}{CloudWatch Log Collection}: This project comes with Cloudformation template and two lambda functions which sends CloudWatch logs to HTTP endpoint.This also includes \href{https://help.sumologic.com/Send-Data/Collect-from-Other-Data-Sources/Auto-Subscribe_AWS_Log_Groups_to_a_Lambda_Function}{Log Group Lambda Connector Function} which automates the process of creating subscriptions both for new and existing log groups.
+            \item Wrote a inhouse golang client named Konton for running chaos experiments (random instance / network / dependent service failures) to test the resliency of the overall system.
+            \item Added API/UI/unit tests for apps and added them in flow pipeline built on top of Jenkins.
+            \item Co-Developed the serverless Business intelligence solution in python using AWS Redshift and AWS Lambda responsible for generating the annual State of Modern Applications and DevSecOps in the Cloud report
+        \end{itemize}
+    \textbf{TWS SYSTEMS PRIVATE LIMITED, Gurgaon}\\
+           \textsl{Software Developer} \hfill \textsl{Apr 2017 -- October 2017} \vspace{1mm}%
     \begin{itemize}
 
 %     \item \textsl{Design and Development of tofler.in's Data Analytics Platform }
 %        \begin{itemize}
-            \item Built GraphQL endpoints(supporting filter, sort, pagination, aggregation etc) by mapping requests to elasticsearch Query DSL and postprocessing query response.
+            \item Built API endpoints(similar to GraphQL and supporting filter, sort, pagination, aggregation etc) by mapping requests to elasticsearch Query DSL and postprocessing query response.
           %  \item Built Event Extraction and Processing Pipeline by tracking changes in database rows.
             \item Wrote Distributed Crawlers \& Processors(for html,pdf,xls files) for extracting and normalizing company data using TDD approach.
            \item Co-developed Company360(single page application in React/Mobx) whose primary features includes modular asset packaging, css transitions and maintainable app state management.
         \end{itemize}
 %    \end{itemize}
 
-    \textbf{HT MEDIA LTD, Gurgaon}\\
+    \newpage
+
+    \textbf{HT MEDIA, Gurgaon}\\
            \textsl{Senior Software Developer} \hfill \textsl{Sep 2016 -- Apr 2017} \vspace{0mm}\\\vspace{0mm}%
            \textsl{Software Developer} \hfill \textsl{July 2015 -- Sep 2016} \vspace{0mm}\\\vspace{0mm}%
            \textsl{Software Developer Intern} \hfill \textsl{Jan 2015 -- July 2015} \vspace{1mm}%
     \begin{itemize}
  %    \item \textsl{Design and Development of HTCampus.com's Lead Management System}
   %      \begin{itemize}
-			\item Led the development of AssistMe tool (recommends best fit colleges based on user's preferences) by implementing custom scoring and matching algorithm in Java.
+            \item Led the development of AssistMe tool (recommends best fit colleges based on user's preferences) by implementing custom scoring and matching algorithm in Java.
             \item Developed Distributed Mail Delivery and Tracking System(sends 400 mails/sec/server) by setting up Celery task queue which resulted in saving significant third party costs.
             \item Developed Response Based Lead Capturing System.It's ability to track user's activity, intelligent lead bucketing/filtering to fulfill deficit orders helped it in becoming primary revenue channel.
-%		    \item As the Lead Software developer for this project, I was working on providing concrete solutions to the design needs put forth by the Product Architect.
+%           \item As the Lead Software developer for this project, I was working on providing concrete solutions to the design needs put forth by the Product Architect.
      %   \end{itemize}
 %   \end{itemize}
 
@@ -96,27 +122,27 @@
             \item Developed dozens of site wide features including 2-factor authentication, autosuggestion, payment gateway integration, generic backend for ranking and exam predictor modules, SEO management dashboards etc.
            % \item Responsible for Deployment of two projects and Developed ​autosuggestion, 2-factor authentication and multiselect components using JQuery.
       %  \end{itemize}
-      
+
     \end{itemize}
 
 %    \section{\mysidestyle Internship}
 
     %\textbf{HT Media LTD, Gurgaon}\\
 %    \textsl{Software Engineering Intern} \hfill \textsl{Jan 2015 -- July 2015} \vspace{0mm}\\\vspace{0mm}
-    %	\begin{itemize}
-	%		\item Developed Interactive Search using Solr's geospatial queries and Google Map API.
+    %   \begin{itemize}
+    %       \item Developed Interactive Search using Solr's geospatial queries and Google Map API.
      %       \item Developed ​Autosuggestion ​feature for Real Estate Domain using Solr.
       %  \end{itemize}
 
-    	%\newpage
-    	%\noindent\rule{15.3cm}{0.4pt}
-		%\vspace{2mm}
+        %\newpage
+        %\noindent\rule{15.3cm}{0.4pt}
+        %\vspace{2mm}
 %\clearpage
     % Other Projects
     \section{\mysidestyle Academic Projects}
-    \vspace{0mm}	
+    \vspace{0mm}
        \begin{itemize}
-	        \item \textbf{Malicious URL Detection} \hfill \textsl{July 2014 -- Nov 2014}\\ Implementation of Naive Bayes and Multi level Artificial Neural Networks in Java and their comparison on URL dataset using R.
+            \item \textbf{Malicious URL Detection} \hfill \textsl{July 2014 -- Nov 2014}\\ Implementation of Naive Bayes and Multi level Artificial Neural Networks in Java and their comparison on URL dataset using R.
             \item \textbf{Sentiment Analysis for Hindi Text} \hfill \textsl{Jan 2014 -- May 2014}\\ Implementation of SVM binary linear classifier using NLP tools and scikit learn libraries in Python to classify sentence into positive and negative classes.
             \item \textbf{Speaker Independent Human Speech Recognition in Hindi} \hfill \textsl{July 2014 -- Nov 2013}\\ Implementation of Baum Welch, Backward/Forward and Viterbi Algorithms in C++ for training HMM model to map speech signal to the corresponding (word model)digit.
        \end{itemize}
@@ -126,18 +152,45 @@
 \vspace{0mm}
     \begin{itemize}
             \item \textbf{Online Competitions} \vspace{0mm}
-		        \subitem Selected for Overnite Coding Event at IIT Kharagpur and secured 8​\textsuperscript{th}​ position.
-		        \subitem Solved 200+ problems in hackerearth(1500 rank) and SPOJ.
-		        \subitem Solved 200+ problems in Brilliant.org and achieved level 4.
-		        \subitem Secured 9th place in bookmyshow's Break The Deadlock hackathon.		        
+                \subitem Selected for Overnite Coding Event at IIT Kharagpur and secured 8​\textsuperscript{th}​ position.
+                \subitem Solved 200+ problems in hackerearth(1500 rank), SPOJ.
+                \subitem Solved 200+ problems in Brilliant.org and achieved level 4.
             \item \textbf{Scholarships} \vspace{0mm}
-            	\subitem Topped Momentum's Entrance Exam and recieved scholarship worth Rs 36,000
-            \item \textbf{Conferences \& WorkShops} \vspace{0mm}
-	            \subitem PyDelhi Conf 2015,PyDelhi Conf 2016,Pycon India 2016.
-		        \subitem MATLAB and its Application in Digital Image \& Signal Processing 2013
-		        % held at IIIT-Allahabad
+                \subitem Topped Momentum's Entrance Exam and received scholarship
+            \item \textbf{Hackathons} \vspace{0mm}
+                \subitem Won first prize in company wide hackathon conducted across countries.
+                \subitem Secured 9th place in bookmyshow's Break The Deadlock hackathon.
     \end{itemize}
-\hfill \textsl{Compiled on \monthyeardate\today}            
+
+
+
+\section{\mysidestyle OpenSource Contributions}
+\vspace{0mm}
+    \begin{itemize}
+                \item \href{https://github.com/tofler/toflerdb}{\textbf{ToflerDB}} is Tofler's graph database engine that's being built to support namespaces, annotated relationships, complex properties, history tracking and field level security out of the box.
+                \item \href{https://github.com/tofler/datagrid-react-toolbox}{\textbf{DataGrid React Toolbox}} is a React component for displaying data in tabular way.It is powered by react-toolbox and mobx.
+                \item \href{https://github.com/Sumologic/sumologic-omnistorage}{\textbf{Omnistorage}} It is a persistent key value store library which provides a unified and easy to use API which can be used for developing both onprem and oncloud applications.
+                \item Core Developer in following Sumo Logic github repos
+                \subitem \href{https://github.com/SumoLogic/sumologic-azure-function}{\textbf{Sumo Logic Azure Functions}}
+                \subitem \href{https://github.com/SumoLogic/sumologic-aws-lambda}{\textbf{Sumo Logic AWS Lambda Functions}}
+
+    \end{itemize}
+\section{\mysidestyle Conferences \& WorkShops}
+\vspace{0mm}
+    \begin{itemize}
+           \item PyDelhi Conf 2015,PyDelhi Conf 2016,Pycon India 2016.
+           \item MATLAB and its Application in Digital Image \& Signal Processing 2013
+    \end{itemize}
+
+\section{\mysidestyle Online Courses}
+\vspace{0mm}
+    \begin{itemize}
+        \item Functional Programming Principles in Scala (\href{https://www.coursera.org/account/accomplishments/verify/AU47C6WSX6NR}{certificate})
+        \item Functional Program Design in Scala (\href{https://www.coursera.org/account/accomplishments/certificate/VUBNK7HMZENA}{certificate})
+        \item Udacity Intro to Data Science Course ud359
+    \end{itemize}
+
+\hfill \textsl{Compiled on \monthyeardate\today}
     % Non Work Projects/Open Source Contributions/Workshops/Courses
 %
 \end{resume}
@@ -145,3 +198,4 @@
 
 %______________________________________________________________________________________________________________________
 % EOF
+

@@ -1,0 +1,35 @@
+Built API endpoints(similar to GraphQL and supporting filter, sort, pagination, aggregation etc) by mapping requests to elasticsearch Query DSL and postprocessing query response.
+%  Built Event Extraction and Processing Pipeline by tracking changes in database rows.
+Wrote Distributed Crawlers \& Processors(for html,pdf,xls files) for extracting and normalizing company data using TDD approach.
+Co-developed Company360(single page application in React/Mobx) whose primary features includes modular asset packaging, css transitions and maintainable app state management.
+
+
+
+Led the development of AssistMe tool (recommends best fit colleges based on user's preferences) by implementing custom scoring and matching algorithm in Java.
+Developed Distributed Mail Delivery and Tracking System(sends 400 mails/sec/server) by setting up Celery task queue which resulted in saving significant third party costs.
+Developed Response Based Lead Capturing System.It's ability to track user's activity, intelligent lead bucketing/filtering to fulfill deficit orders helped it in becoming primary revenue channel.
+% Developed Attribute Based Recommendation System(AssistMe Module) using Solr.
+%As the Lead Software developer for this project, I was working on providing concrete solutions to the design needs put forth by the Product Architect.
+%\textsl{Design and Development of Bidnbid.com - Online Real Estate Auction Platform}
+Developed Interactive Search using Solr's geospatial queries and Google Maps API.
+Developed dozens of site wide features including 2-factor authentication, autosuggestion, payment gateway integration, generic backend for ranking and exam predictor modules, SEO management dashboards etc.
+%Responsible for Deployment of two projects and Developed ​autosuggestion, 2-factor authentication and multiselect components using JQuery.
+
+
+
+Implementation of Naive Bayes and Multi level Artificial Neural Networks in Java and their comparison on URL dataset using R.
+Implementation of SVM binary linear classifier using NLP tools and scikit learn libraries in Python to classify sentence into positive and negative classes.
+Implementation of Baum Welch, Backward/Forward and Viterbi Algorithms in C++ for training HMM model to map speech signal to the corresponding (word model)digit.
+
+
+Selected for Overnite Coding Event at IIT Kharagpur and secured 8​\textsuperscript{th}​ position.
+Solved 200+ problems in hackerearth(1500 rank) and SPOJ.
+Solved 200+ problems in Brilliant.org and achieved level 4.
+Secured 9th place in bookmyshow's Break The Deadlock hackathon.
+\textbf{Scholarships} \vspace{0mm}
+Topped Momentum's Entrance Exam and recieved scholarship
+\textbf{Conferences \& WorkShops} \vspace{0mm}
+PyDelhi Conf 2015,PyDelhi Conf 2016,Pycon India 2016.
+MATLAB and its Application in Digital Image \& Signal Processing 2013
+                % held at IIIT-Allahabad
+
