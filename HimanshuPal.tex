@@ -66,7 +66,7 @@
           \item Blogs: \url{https://www.sumologic.com/blog/author/hpal/}
           \item Stackoverflow: \url{https://stackoverflow.com/users/2699636/himanshu219}
      \end{itemize}
-      \textbf{Frameworks/Libraries/VCS:} Django, jQuery, NumPy, SciPy, scikit-learn, Solr, ElasticSearch, MySQL, PostgreSQL, RabbitMQ, Ansible, Supervisor, React, Mobx, ES6, Git, AWS, Azure, GCP
+      \textbf{Frameworks/Libraries/VCS:} Django, jQuery, NumPy, SciPy, scikit-learn, Solr, ElasticSearch, MySQL, PostgreSQL, RabbitMQ, Ansible, Supervisor, React, Mobx, ES6, Git, AWS, Azure, GCP, Probot, Kubernetes
       %\item \textbf{Tools/VCS:} Pycharm, Jenkins, Redmine, Git, Vim, Phabricator, Byobu
  %    \end{itemize}
     %__________________________________________________________________________________________________________________
@@ -77,15 +77,18 @@
     % Professional Experience
     \section{\mysidestyle Work Experience}
     \textbf{Sumo Logic, Noida}\\
-        \textsl{Application Developer} \hfill \textsl{Nov 2017 -- Present}
+        \textsl{Application Developer II} \hfill \textsl{Nov 2017 -- Present}
         \vspace{1mm}%
         \begin{itemize}
-            \item Developed several event based solution to collect logs from various monitoring services like AWS Cloudwatch, Azure Monitor, AWS Security Hub etc supporting features like failure handling, chunking, compression, state management and deployment templates(ARM and Cloudformtion).Technologies used were nodejs, python, Azure Functions, EventHub, Service Bus, AWS Lambda,API Gateway etc.AWS specific ones are included in \href{https://serverlessrepo.aws.amazon.com/applications}{serverless repo}
-            \subitem \href{https://help.sumologic.com/Send-Data/Collect-from-Other-Data-Sources/Azure_Blob_Storage}{Azure Blob Storage Collection}: Event based collection pipeline for shipping monitoring data from Azure Blob Storage to an HTTP endpoint.
-            \subitem \href{https://help.sumologic.com/Send-Data/Collect-from-Other-Data-Sources/Amazon-CloudWatch-Logs}{CloudWatch Log Collection}: This project comes with Cloudformation template and two lambda functions which sends CloudWatch logs to HTTP endpoint.This also includes \href{https://help.sumologic.com/Send-Data/Collect-from-Other-Data-Sources/Auto-Subscribe_AWS_Log_Groups_to_a_Lambda_Function}{Log Group Lambda Connector Function} which automates the process of creating subscriptions both for new and existing log groups.
+            \item Developed several collection solution for various monitoring services like AWS Cloudwatch, Azure Monitor, AWS Security Hub etc supporting features like failure handling, chunking, compression, state management and deployment templates(ARM and Cloudformtion) using serverless technologies(AWS Lambda, DynomoDB, Event Hub, Azure Functions etc.). Prominent ones are 
+            \subitem \href{https://help.sumologic.com/Send-Data/Collect-from-Other-Data-Sources/Azure_Blob_Storage}{Azure Blob Storage Collection}
+            \subitem \href{https://help.sumologic.com/Send-Data/Collect-from-Other-Data-Sources/Amazon-CloudWatch-Logs}{CloudWatch Log Collection}
+            \item Developed a hybrid cloud framework named \href{https://pypi.org/project/sumologic-appclient-sdk/}{sumologic-appclient-sdk} (supporting AWS, GCP, Azure and onprem) for API based log collection. This has improved the developement time and effort for building collection solutions. 
+            \item Developed a automated CI/CD pipeline which includes API/UI/unit tests for Partner Apps Development using Jenkins on GKE and \href{https://github.com/apps/sumopartners}{a SumoPartners Github app.}
             \item Wrote a inhouse golang client named Konton for running chaos experiments (random instance / network / dependent service failures) to test the resliency of the overall system.
-            \item Added API/UI/unit tests for apps and added them in flow pipeline built on top of Jenkins.
+            %\item Added API/UI/unit tests for apps and added them in flow pipeline built on top of Jenkins.
             \item Co-Developed the serverless Business intelligence solution in python using AWS Redshift and AWS Lambda responsible for generating the annual State of Modern Applications and DevSecOps in the Cloud report
+            
         \end{itemize}
     \textbf{TWS SYSTEMS PRIVATE LIMITED, Gurgaon}\\
            \textsl{Software Developer} \hfill \textsl{Apr 2017 -- October 2017} \vspace{1mm}%
@@ -188,6 +191,7 @@
         \item Functional Programming Principles in Scala (\href{https://www.coursera.org/account/accomplishments/verify/AU47C6WSX6NR}{certificate})
         \item Functional Program Design in Scala (\href{https://www.coursera.org/account/accomplishments/certificate/VUBNK7HMZENA}{certificate})
         \item Udacity Intro to Data Science Course ud359
+        \item Kubernetes in the Google Cloud (\href{https://google.qwiklabs.com/quests/29})
     \end{itemize}
 
 \hfill \textsl{Compiled on \monthyeardate\today}
@@ -198,4 +202,3 @@
 
 %______________________________________________________________________________________________________________________
 % EOF
-
