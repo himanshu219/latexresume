@@ -56,7 +56,7 @@
      \textbf{Cloud Platforms}
      \begin{itemize}
           \item Expert: Amazon Web Services
-          \item Intermediate: Azure and Google Web Services
+          \item Intermediate: Azure and Google Cloud Platforms
      \end{itemize}
      \textbf{Important Links}
      \begin{itemize}
@@ -66,7 +66,8 @@
           \item Blogs: \url{https://www.sumologic.com/blog/author/hpal/}
           \item Stackoverflow: \url{https://stackoverflow.com/users/2699636/himanshu219}
      \end{itemize}
-      \textbf{Frameworks/Libraries/VCS:} Django, jQuery, NumPy, SciPy, scikit-learn, Solr, ElasticSearch, MySQL, PostgreSQL, RabbitMQ, Ansible, Supervisor, React, Mobx, ES6, Git, AWS, Azure, GCP, Probot, Kubernetes
+      \textbf{Frameworks/Libraries/VCS/Cloud Services:} NodeJs, Django, Solr, ElasticSearch, MySQL, PostgreSQL, Rab-
+bitMQ, Ansible, Supervisor, React, Azure Functions, EventHub, Event Grid, Service Bus, AWS Lambda, API Gateway, Kinesis, S3, CloudFormation, Probot
       %\item \textbf{Tools/VCS:} Pycharm, Jenkins, Redmine, Git, Vim, Phabricator, Byobu
  %    \end{itemize}
     %__________________________________________________________________________________________________________________
@@ -77,33 +78,36 @@
     % Professional Experience
     \section{\mysidestyle Work Experience}
     \textbf{Sumo Logic, Noida}\\
-        \textsl{Application Developer II} \hfill \textsl{Nov 2017 -- Present}
-        \vspace{1mm}%
+        \textsl{Senior Software Engineer I} \hfill \textsl{April 2021 -- Present}\vspace{0mm}\\\vspace{0mm}%
+        \textsl{Software Engineer II} \hfill \textsl{June 2019 -- April 2021}\vspace{0mm}\\\vspace{0mm}%
+        \textsl{Application Developer I} \hfill \textsl{Nov 2017 -- June 2019}\vspace{1mm}%
         \begin{itemize}
-            \item Developed several collection solution for various monitoring services like AWS Cloudwatch, Azure Monitor, AWS Security Hub etc supporting features like failure handling, chunking, compression, state management and deployment templates(ARM and Cloudformtion) using serverless technologies(AWS Lambda, DynomoDB, Event Hub, Azure Functions etc.). Prominent ones are 
-            \subitem \href{https://help.sumologic.com/Send-Data/Collect-from-Other-Data-Sources/Azure_Blob_Storage}{Azure Blob Storage Collection}
-            \subitem \href{https://help.sumologic.com/Send-Data/Collect-from-Other-Data-Sources/Amazon-CloudWatch-Logs}{CloudWatch Log Collection}
-            \item Developed a hybrid cloud framework named \href{https://pypi.org/project/sumologic-appclient-sdk/}{sumologic-appclient-sdk} (supporting AWS, GCP, Azure and onprem) for API based log collection. This has improved the developement time and effort for building collection solutions. 
-            \item Developed a automated CI/CD pipeline which includes API/UI/unit tests for Partner Apps Development using Jenkins on GKE and \href{https://github.com/apps/sumopartners}{a SumoPartners Github app.}
-            \item Wrote a inhouse golang client named Konton for running chaos experiments (random instance / network / dependent service failures) to test the resliency of the overall system.
+            \item Created \href{https://pypi.org/project/sumologic-appclient-sdk/}{SDK} for API based collection comprising of generic key value store(supporting multiple cloud providers and onprem environment), output handlers(http/file/console) and package generator modules.This has made developing collection agents easier and is now being used in more than 8+ collectors.
+            \item Built a continuous integration pipeline for Partner Apps \href{https://github.com/SumoLogic/sumologic-public-partner-apps}{repo} using Jenkins on GKE and a  \href{https://github.com/apps/sumopartners}{SumoPartners Github app}.It involved writing unit/API/UI tests, creating groovy based pipeline definitions for deploying apps \& running tests and a \href{https://github.com/SumoLogic/sumologic-appcli-core}{cli tool} for partner app developers.
             %\item Added API/UI/unit tests for apps and added them in flow pipeline built on top of Jenkins.
-            \item Co-Developed the serverless Business intelligence solution in python using AWS Redshift and AWS Lambda responsible for generating the annual State of Modern Applications and DevSecOps in the Cloud report
+            \item Developed serverless solutions to collect logs from various monitoring services like AWS Cloudwatch, Azure Monitor etc supporting features like failure handling, chunking, compression, state management and template based deployment. Prominent ones are mentioned below 
+            \subitem \href{https://help.sumologic.com/Send-Data/Collect-from-Other-Data-Sources/Azure_Blob_Storage}{Azure Blob Storage Collection}: Event based collection pipeline for shipping monitoring
+data from Azure Blob Storage to an HTTP endpoint.
+            \subitem \href{https://help.sumologic.com/Send-Data/Collect-from-Other-Data-Sources/Amazon-CloudWatch-Logs}{CloudWatch Log Collection}: This project comes with Cloudformation template \& two lambda functions which sends CloudWatch logs to HTTP endpoint.This also includes Log Group Lambda Connector Function which automates subscription filter creation.
+            \item Co-Developed the serverless Business Intelligence solution  using AWS Redshift \& AWS Lambda responsible for generating the annual State of Modern Applications \& DevSecOps in the \href{https://www.sumologic.com/brief/state-modern-apps-report/}{Cloud report}
+            \item Co-Developed the Golang based \href{https://github.com/SumoLogic/sumologic-lambda-extensions}{AWS Lambda extension} using the producer/consumer design pattern for collecting AWS Lambda logs.
+            \item Wrote a Golang based cli client for running chaos experiments (random instance / network / dependent service failures) to test the resliency of the services.
+            
             
         \end{itemize}
+    \newpage
     \textbf{TWS SYSTEMS PRIVATE LIMITED, Gurgaon}\\
            \textsl{Software Developer} \hfill \textsl{Apr 2017 -- October 2017} \vspace{1mm}%
     \begin{itemize}
 
 %     \item \textsl{Design and Development of tofler.in's Data Analytics Platform }
 %        \begin{itemize}
-            \item Built API endpoints(similar to GraphQL and supporting filter, sort, pagination, aggregation etc) by mapping requests to elasticsearch Query DSL and postprocessing query response.
+            \item Built API endpoints(similar to GraphQL and supporting filter, sort, pagination, aggregation etc) by mapping requests to elasticsearch Query DSL and post processing query response.
           %  \item Built Event Extraction and Processing Pipeline by tracking changes in database rows.
-            \item Wrote Distributed Crawlers \& Processors(for html,pdf,xls files) for extracting and normalizing company data using TDD approach.
+            \item Wrote Distributed Crawlers \& Processors(for HTML,PDF,XLS files) for extracting and normalizing company data using TDD approach.
            \item Co-developed Company360(single page application in React/Mobx) whose primary features includes modular asset packaging, css transitions and maintainable app state management.
         \end{itemize}
 %    \end{itemize}
-
-    \newpage
 
     \textbf{HT MEDIA, Gurgaon}\\
            \textsl{Senior Software Developer} \hfill \textsl{Sep 2016 -- Apr 2017} \vspace{0mm}\\\vspace{0mm}%
@@ -112,7 +116,7 @@
     \begin{itemize}
  %    \item \textsl{Design and Development of HTCampus.com's Lead Management System}
   %      \begin{itemize}
-            \item Led the development of AssistMe tool (recommends best fit colleges based on user's preferences) by implementing custom scoring and matching algorithm in Java.
+            \item Led the development of Assist-Me tool (recommends best fit colleges based on user's preferences) by implementing custom scoring and matching algorithm in Java.
             \item Developed Distributed Mail Delivery and Tracking System(sends 400 mails/sec/server) by setting up Celery task queue which resulted in saving significant third party costs.
             \item Developed Response Based Lead Capturing System.It's ability to track user's activity, intelligent lead bucketing/filtering to fulfill deficit orders helped it in becoming primary revenue channel.
 %           \item As the Lead Software developer for this project, I was working on providing concrete solutions to the design needs put forth by the Product Architect.
@@ -123,7 +127,7 @@
     %    \begin{itemize}
             \item Developed Interactive Search using Solr's geospatial queries and Google Maps API.
             \item Developed dozens of site wide features including 2-factor authentication, autosuggestion, payment gateway integration, generic backend for ranking and exam predictor modules, SEO management dashboards etc.
-           % \item Responsible for Deployment of two projects and Developed ​autosuggestion, 2-factor authentication and multiselect components using JQuery.
+           % \item Responsible for Deployment of two projects and Developed ​autosuggestion, 2-factor authentication and multi-select components using JQuery.
       %  \end{itemize}
 
     \end{itemize}
@@ -145,7 +149,7 @@
     \section{\mysidestyle Academic Projects}
     \vspace{0mm}
        \begin{itemize}
-            \item \textbf{Malicious URL Detection} \hfill \textsl{July 2014 -- Nov 2014}\\ Implementation of Naive Bayes and Multi level Artificial Neural Networks in Java and their comparison on URL dataset using R.
+            % \item \textbf{Malicious URL Detection} \hfill \textsl{July 2014 -- Nov 2014}\\ Implementation of Naive Bayes and Multi level Artificial Neural Networks in Java and their comparison on URL dataset using R.
             \item \textbf{Sentiment Analysis for Hindi Text} \hfill \textsl{Jan 2014 -- May 2014}\\ Implementation of SVM binary linear classifier using NLP tools and scikit learn libraries in Python to classify sentence into positive and negative classes.
             \item \textbf{Speaker Independent Human Speech Recognition in Hindi} \hfill \textsl{July 2014 -- Nov 2013}\\ Implementation of Baum Welch, Backward/Forward and Viterbi Algorithms in C++ for training HMM model to map speech signal to the corresponding (word model)digit.
        \end{itemize}
@@ -154,15 +158,19 @@
 \section{\mysidestyle Achievements \& \\ Activities}
 \vspace{0mm}
     \begin{itemize}
+            \item \textbf{Recognitions} \vspace{0mm}
+                \subitem Got the Quarterly Product Development Award in Sumo Logic.
+                \subitem Won the Quarterly Bug Bounty(internal program in Sumo Logic) award for discovering a potential security bug.
+            % \item \textbf{Hackathons} \vspace{0mm}
+                \subitem Won first prize in company(Sumo Logic) wide hackathon conducted for Konton(cli tool for running chaos experiments).
             \item \textbf{Online Competitions} \vspace{0mm}
+                \subitem Secured 9th place in bookmyshow's Break The Deadlock hackathon.
                 \subitem Selected for Overnite Coding Event at IIT Kharagpur and secured 8​\textsuperscript{th}​ position.
                 \subitem Solved 200+ problems in hackerearth(1500 rank), SPOJ.
                 \subitem Solved 200+ problems in Brilliant.org and achieved level 4.
             \item \textbf{Scholarships} \vspace{0mm}
                 \subitem Topped Momentum's Entrance Exam and received scholarship
-            \item \textbf{Hackathons} \vspace{0mm}
-                \subitem Won first prize in company wide hackathon conducted across countries.
-                \subitem Secured 9th place in bookmyshow's Break The Deadlock hackathon.
+            
     \end{itemize}
 
 
@@ -178,19 +186,19 @@
                 \subitem \href{https://github.com/SumoLogic/sumologic-aws-lambda}{\textbf{Sumo Logic AWS Lambda Functions}}
 
     \end{itemize}
-\section{\mysidestyle Conferences \& WorkShops}
-\vspace{0mm}
-    \begin{itemize}
-           \item PyDelhi Conf 2015,PyDelhi Conf 2016,Pycon India 2016.
-           \item MATLAB and its Application in Digital Image \& Signal Processing 2013
-    \end{itemize}
+% \section{\mysidestyle Conferences \& WorkShops}
+% \vspace{0mm}
+%     \begin{itemize}
+%           \item PyDelhi Conf 2015,PyDelhi Conf 2016,Pycon India 2016.
+%           \item MATLAB and its Application in Digital Image \& Signal Processing 2013
+%     \end{itemize}
 
 \section{\mysidestyle Online Courses}
 \vspace{0mm}
     \begin{itemize}
         \item Functional Programming Principles in Scala (\href{https://www.coursera.org/account/accomplishments/verify/AU47C6WSX6NR}{certificate})
         \item Functional Program Design in Scala (\href{https://www.coursera.org/account/accomplishments/certificate/VUBNK7HMZENA}{certificate})
-        \item Udacity Intro to Data Science Course ud359
+        % \item Udacity Intro to Data Science Course ud359
         \item \href{https://google.qwiklabs.com/quests/29}{Kubernetes in the Google Cloud}
     \end{itemize}
 
