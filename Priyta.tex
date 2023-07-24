@@ -1,0 +1,102 @@
+%______________________________________________________________________________________________________________________
+% @brief    LaTeX2e Resume for Himanshu Pal
+\documentclass[margin,line]{resume}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{datenumber}
+\usepackage{datetime}
+\usepackage{hyperref}
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+
+\newcounter{dateone}
+\newcounter{datetwo}
+
+\newcommand{\difftoday}[3]{%
+      \setmydatenumber{dateone}{\the\year}{\the\month}{\the\day}%
+      \setmydatenumber{datetwo}{#1}{#2}{#3}%
+      \addtocounter{datetwo}{-\thedateone}%
+      \the\numexpr-\thedatetwo/365\relax\space year(s),
+      \the\numexpr(-\thedatetwo - (-\thedatetwo/365)*365)/30\relax\space month(s)
+}
+%______________________________________________________________________________________________________________________
+
+\begin{document}
+\name{\Large Priyta Yadav}  \address{mobile: +91-9930145225 \\ email: yadavpriyta@gmail.com}
+\begin{resume}
+
+    %__________________________________________________________________________________________________________________
+    % About Me
+%    \section{\mysidestyle About Me}
+%      \begin{itemize}
+%        \item About \difftoday{2012}{12}{17} of software development experience, building software in industry.
+%       \item Currently holds a position of Software Engineer, focused on requirement analysis, design, development \& delivery of products with teamwork.
+%       \item Has been a proficient coder in multiple languages which includes Python \& JavaScript.
+%   \end{itemize}
+
+    %__________________________________________________________________________________________________________________
+    % Education
+    \section{\mysidestyle Education}
+
+    \textbf{Hitkarni College of Engineering and Technology, Jabalpur} \hfill \textbf{2010 -- 2014}\vspace{0mm}\\\vspace{0mm}%
+    \textsl{Bachelors of Engineering in Computer Science and Technology} \hfill \textsl{Percentage: 76.4}
+    \section{\mysidestyle Technical \\ Skills}
+    \vspace{0mm}
+%   \textbf{Programming Languages:} Python, JavaScript, NodeJS, C, C++, Java, Scala, Shell Script \\
+    % \begin{itemize}
+     \textbf{Programming Languages}: \textbf{Expert}: Java \textbf{Intermediate}: JavaScript
+     
+     \textbf{Testing Experience}: UI Automation Testing, REST and SOAP API Automation Testing, Regression Testing, Build Verification Testing, Behavior Driven Testing
+      
+      \textbf{Frameworks/Libraries/VCS:} Selenium WebDriver, TestNG, Cucumber, Selenoid Grid, Jenkins, Docker, JIRA, Swagger, JAVA Data Driven Framework, TestNG Framework, Jest, Puppeteer, JFrog Artifact Repository, Bugzilla, GitHub, Rest Assured
+ 
+    \section{\mysidestyle Work Experience}
+    \textbf{Barclays Global Service Center , Pune}\\
+        \textsl{Senior Automation Test Analyst (BA4)} \hfill \textsl{July 2022 -- Present}\vspace{0mm}
+        
+        \begin{itemize}
+            \item Led the team for UI delivery and in sprint automation, efficiently managing release from planning and execution to sign-off averaging 15+ user stories per sprint. %with responsbilities including prioritizing and delegating tasks to QA testers, interacting with developers and PM to communicate defects, coordinating walkthroughs with Operations team, tracking & communicating daily release progress.%
+            \item Built the automation from scratch using Cucumber BDD Framework and implemented features like reporting, parallel execution, Database Connections, Unix Job Executions etc.
+            \item Performed Data Driven Testing using internal tool for MiFID II Post-Trade Reporting application.
+            \item Built the automation for comparing new and old UI which helped in identifying data migration issues.
+        \end{itemize}
+    \textbf{HCL Software, Bangalore}\\
+           \textsl{Automation Tester (Client: Bigfix WebUI Application, Italy)} \hfill \textsl{May 2021 -- June 2022} \vspace{1mm}%
+    \begin{itemize}
+            \item Implemented end to end automation using Jenkins including installation and configuration of Jenkins, creating pipeline jobs to run the test cases for every update of the application.
+            \item Automated backlog of manual test cases using Jest framework and puppeteer.
+           \item Completed POC for executing test cases inside docker containers.
+        \end{itemize}
+%    \end{itemize}
+
+    \textbf{Tata Consultancy Services, Thane}\\
+           \textsl{Senior Software Developer} \hfill \textsl{Dec 2014 -- April 2021} \vspace{0mm}\\\vspace{0mm}%
+           \textsl{Clients: The Kroger Co.(USA), IDFC Bank, Koperasi Tenera(Malaysia), Mutual Trust Bank Limited (Bangladesh)} \hfill  \vspace{0mm}\\\vspace{0mm}%
+    \begin{itemize}
+            \item Worked as QA Lead (with team size of 5 members), responsible for implementing QA Processes for defects delivery  and change requests, communicating with clients, coordinating with offshore teams and planning user acceptance testing.
+            \item Built and maintained API Tests using Rest Assured and TestNG framework.
+            \item Executed regression and smoke Testing in the branches
+using Team City.
+            \item Analyzed issues generated by Sonar and fixing it in the automation code for enhancing code quality.
+            \item Performed Manual Testing of SDV Module,Loan lifecycle, Member ship modules, General ledger Recon, NPA, Payments (Pay Order, Demand Drafts, Clearing, SWIFT (Outward and Inward MT103 and MT202, Trade Finance, LC Payment, BG) etc.
+       \end{itemize}
+    
+\section{\mysidestyle Achievements \& \\ Activities}
+\vspace{0mm}
+    \begin{itemize}
+            \item \textbf{Recognitions} \vspace{0mm}
+                \subitem Got the Quarterly Product Development Award in Sumo Logic.
+                \subitem Won the Quarterly Bug Bounty(internal program in Sumo Logic) award for discovering a potential security bug.
+            % \item \textbf{Hackathons} \vspace{0mm}
+                \subitem Won first prize in company(Sumo Logic) wide hackathon conducted for Konton(cli tool for running chaos experiments).            
+    \end{itemize}
+
+\section{\mysidestyle Certifications}
+\vspace{0mm}
+    \begin{itemize}
+        \item Certification on Professional Automation Testing on Selenium from Squad InfoTech.
+        \item Professional Scrum Master -1 Certification from Scrum.org
+    \end{itemize}
+\hfill \textsl{Compiled on \monthyeardate\today}
+\end{resume}
+\end{document}
