@@ -1,3 +1,3 @@
 # latexresume
 
-Contains resume template. It contains tex and cls file.
+Contains resume template. It contains tex and cls files.
