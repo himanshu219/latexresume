@@ -6,6 +6,7 @@
 \usepackage{datenumber}
 \usepackage{datetime}
 \usepackage{hyperref}
+\usepackage{fontawesome}
 \newdateformat{monthyeardate}{%
   \monthname[\THEMONTH], \THEYEAR}
 
@@ -39,10 +40,11 @@
     \section{\mysidestyle Education}
 
     \textbf{Indian Institute of Information Technology, Allahabad} \hfill \textbf{2011 -- 2015}\vspace{0mm}\\\vspace{0mm}%
-    \textsl{B.Tech (Information Technology)} \hfill \textsl{CGPA: 7.99}\vspace{2mm}\\
-    \textbf{Christ Church Boys' Senior Secondary School, Jabalpur(CBSE)} \hfill \textbf{2003 -- 2011}\vspace{0mm}\\\vspace{0mm}%
-    \textsl{Intermediate (Science)} \hfill \textsl{Percentage: 76.0\%}\vspace{0mm}\\\vspace{0mm}%
-    \textsl{Matriculation } \hfill \textsl{Percentage: 87.4\%}
+    \textsl{B.Tech (Information Technology)} \hfill \textsl{CGPA: 7.99}
+    % \textsl{B.Tech (Information Technology)} \hfill \textsl{CGPA: 7.99}\vspace{2mm}\\
+    % \textbf{Christ Church Boys' Senior Secondary School, Jabalpur(CBSE)} \hfill \textbf{2003 -- 2011}\vspace{0mm}\\\vspace{0mm}%
+    % \textsl{Intermediate (Science)} \hfill \textsl{Percentage: 76.0\%}\vspace{0mm}\\\vspace{0mm}%
+    % \textsl{Matriculation } \hfill \textsl{Percentage: 87.4\%}
 
     \section{\mysidestyle Technical \\ Skills}
     \vspace{0mm}
@@ -60,18 +62,21 @@
      % \end{itemize}
      \textbf{Important Links}
      \begin{itemize}
-          \item Github: \url{https://github.com/himanshu219}
-          \item Linkedin: \url{https://www.linkedin.com/in/himanshu-pal}
-          \item Hackerearth: \url{http://www.hackerearth.com/@himanshu_pal}
-          \item Blogs: \url{https://www.sumologic.com/blog/author/hpal/}
-          \item AWS Partner Network: \url{https://aws.amazon.com/search/?searchQuery=himanshu+pal}
-          \item Stack Overflow: \url{https://stackoverflow.com/users/2699636/himanshu219}
+     \item Code: \href{https://github.com/himanshu219}{Github \faGithub}, \href{http://www.hackerearth.com/@himanshu_pal}{HackerEarth \faCode},
+     \item Social: \href{https://www.linkedin.com/in/himanshu-pal}{Linkedin \faLinkedin}, \href{https://stackoverflow.com/users/2699636/himanshu219}{Stack Overflow \faStackOverflow}
+     \item Blogs: \href{https://www.sumologic.com/blog/author/hpal/}{Sumo Logic \faBook}, \href{https://aws.amazon.com/search/?searchQuery=himanshu+pal}{AWS Partner Network \faBook}
+     
+          % \item Github: \url{https://github.com/himanshu219}
+          % \item Linkedin: \url{https://www.linkedin.com/in/himanshu-pal}
+          % \item Hackerearth: \url{http://www.hackerearth.com/@himanshu_pal}
+          % \item Blogs: \url{https://www.sumologic.com/blog/author/hpal/}
+          % \item AWS Partner Network: \url{https://aws.amazon.com/search/?searchQuery=himanshu+pal}
+          % \item Stack Overflow: \url{https://stackoverflow.com/users/2699636/himanshu219}
      \end{itemize}
       \textbf{Frameworks/Libraries/VCS/Cloud Services} 
       \begin{itemize}
           \item Expert: CloudFormation, Terraform, ARM Template, AWS Bedrock, Langchain, Azure Functions, Azure EventHub, Azure Service Bus, AWS Lambda, API Gateway, Kinesis, S3, ECS
-          \item Intermediate: NodeJS, Django, MySQL, PostgreSQL, Rab-
-bitMQ, MongoDB, CosmosDB
+          \item Intermediate: NodeJS, Django, MySQL, PostgreSQL, RabbitMQ, MongoDB, CosmosDB, Google Cloud Functions
      \end{itemize}
       %\item \textbf{Tools/VCS:} Django, Solr, Ansible, Supervisor, React Pycharm, Jenkins, Redmine, Git, Vim, Phabricator, Byobu
  %    \end{itemize}
@@ -99,17 +104,16 @@ bitMQ, MongoDB, CosmosDB
             % \pagebreak
             \subitem \href{https://help.sumologic.com/Send-Data/Collect-from-Other-Data-Sources/Amazon-CloudWatch-Logs}{AWS CloudWatch Log Collection}: Built a AWS CloudFormation based pipeline, automating resource provisioning including dead letter queue-enabled Lambda functions to ensure reliable log delivery. It also included \href{https://serverlessrepo.aws.amazon.com/applications/us-east-1/956882708938/sumologic-loggroup-connector}{Log Group Lambda Connector}(6.1k deployments) AWS SAM application for dynamic subscription of new and existing log groups to the Lambda function, thereby streamlining log collection processes.
             \subitem \href{https://github.com/SumoLogic/sumologic-lambda-extensions}{AWS Lambda extension}: Built Golang based extension for collecting AWS Lambda logs by using producer/consumer design pattern which helped in achieving Lambda Ready certification.
-            \item Led the effort to increase AI Adoption to enhance developer productivity within the team with below projects:
+            \item Led the effort to enhance developer productivity with below AI based projects:
                 \subitem Automated PR Review System using Langchain and AWS Bedrock which reduced the feedback cycle and improved standardization of dashboards by providing actionable insights on content text quality, new use case recommendations, visual alignment, UX improvements, and query optimizations.
                 \subitem Automated app documentation generation tool to create dashboard descriptions and use cases from screenshots, significantly reducing manual writing and enhancing documentation accuracy.
+            \item Co-Developed the serverless Business Intelligence solution  using AWS Redshift \& AWS Lambda responsible for generating the annual \href{https://www.sumologic.com/brief/state-modern-apps-report/}{State of Modern Applications \& DevSecOps} report.
+            \item Wrote a Golang based cli client for running chaos experiments (random instance or dependent service failures, cpu, memory and network latency spikes) to test the resiliency of the services.
             \pagebreak
             \item Created \href{https://pypi.org/project/sumologic-appclient-sdk/}{Python SDK} for API-based data collection, incorporating a generic key-value store compatible with multiple cloud providers and on-premises environments, alongside flexible output handlers for HTTP, file, and console outputs. It streamlined the development and deployment of collection agents by enhancing reusability with common components like compression, batching, and logging, and is now utilized in over 8 integrations.
             \item Developed multiple \href{https://help.sumologic.com/docs/send-data/hosted-collectors/cloud-to-cloud-integration-framework/}{Cloud-to-Cloud Sources} to collect events and logs directly from SaaS and Cloud platforms by creating efficient Docker images that poll APIs and aggregate paginated data while managing authentication, scheduling, and state tracking. Prominent ones are
              \href{https://help.sumologic.com/docs/send-data/hosted-collectors/cloud-to-cloud-integration-framework/aws-cost-explorer-source/}{AWS Cost Explorer Source} and \href{https://help.sumologic.com/docs/send-data/hosted-collectors/cloud-to-cloud-integration-framework/salesforce-source/}{Salesforce Source}
             \item Built a continuous integration pipeline for Partner Apps \href{https://github.com/SumoLogic/sumologic-public-partner-apps}{repo} using Jenkins on GKE and a \href{https://github.com/apps/sumopartners}{SumoPartners Github app}.It involved writing unit/API/UI tests, creating groovy based pipeline definitions for deploying apps \& running tests and a \href{https://pypi.org/project/sumologic-apptestutils/}{cli tool} for partner app developers.
-            %\item Added API/UI/unit tests for apps and added them in flow pipeline built on top of Jenkins.
-            % \item Co-Developed the serverless Business Intelligence solution  using AWS Redshift \& AWS Lambda responsible for generating the annual State of Modern Applications \& DevSecOps in the \href{https://www.sumologic.com/brief/state-modern-apps-report/}{Cloud report}
-            % \item Wrote a Golang based cli client for running chaos experiments (random instance or dependent service failures, cpu, memory and network latency spikes) to test the resiliency of the services.
         \end{itemize}
     
     \textbf{TWS SYSTEMS PRIVATE LIMITED, Gurgaon}\\
@@ -143,8 +147,7 @@ bitMQ, MongoDB, CosmosDB
   %  \item \textsl{Design and Development of Bidnbid.com - Online Real Estate Auction Platform}
     %    \begin{itemize}
             \item Developed Interactive Search using Solr's geospatial queries and Google Maps API.
-            % \item Developed dozens of site wide features including 2-factor authentication, autosuggestion, payment gateway integration, generic backend for ranking and exam predictor modules, SEO management dashboards etc.
-           % \item Responsible for Deployment of two projects and Developed ​autosuggestion, 2-factor authentication and multi-select components using JQuery.
+            \item Implemented a range of site-wide features to enhance user experience, including two-factor authentication, payment gateway integration, multi-select custom jQuery components, and developing SEO management dashboards to drive engagement and optimize search performance..
       %  \end{itemize}
 
     \end{itemize}
@@ -184,8 +187,8 @@ bitMQ, MongoDB, CosmosDB
             \item \textbf{Online Competitions} \vspace{0mm}
                 \subitem Secured 9th place in bookmyshow's Break The Deadlock hackathon.
                 \subitem Selected for Overnite Coding Event at IIT Kharagpur and secured 8​\textsuperscript{th}​ position.
-                \subitem Solved 200+ problems in hackerearth(1500 rank), SPOJ.
-                \subitem Solved 200+ problems in Brilliant.org and achieved level 4.
+                \subitem Solved 200+ problems in hackerearth(1500 rank), SPOJ and Brilliant.org(level 4).
+                % \subitem Solved 200+ problems in Brilliant.org and achieved level 4.
             % \item \textbf{Scholarships} \vspace{0mm}
             %     \subitem Topped Momentum's Entrance Exam and received a  scholarship
             
