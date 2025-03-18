@@ -148,8 +148,7 @@ bitMQ, MongoDB, CosmosDB
   %  \item \textsl{Design and Development of Bidnbid.com - Online Real Estate Auction Platform}
     %    \begin{itemize}
             \item Developed Interactive Search using Solr's geospatial queries and Google Maps API.
-            % \item Developed dozens of site wide features including 2-factor authentication, autosuggestion, payment gateway integration, generic backend for ranking and exam predictor modules, SEO management dashboards etc.
-           % \item Responsible for Deployment of two projects and Developed ​autosuggestion, 2-factor authentication and multi-select components using JQuery.
+            % \item Implemented a range of site-wide features to enhance user experience, including two-factor authentication, payment gateway integration, multi-select custom jQuery components, and developing SEO management dashboards to drive engagement and optimize search performance.
       %  \end{itemize}
 
     \end{itemize}
