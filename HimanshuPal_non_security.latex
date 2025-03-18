@@ -107,13 +107,13 @@
             \item Led the effort to enhance developer productivity with below AI based projects:
                 \subitem Automated PR Review System using Langchain and AWS Bedrock which reduced the feedback cycle and improved standardization of dashboards by providing actionable insights on content text quality, new use case recommendations, visual alignment, UX improvements, and query optimizations.
                 \subitem Automated app documentation generation tool to create dashboard descriptions and use cases from screenshots, significantly reducing manual writing and enhancing documentation accuracy.
-            \item Co-Developed the serverless Business Intelligence solution  using AWS Redshift \& AWS Lambda responsible for generating the annual \href{https://www.sumologic.com/brief/state-modern-apps-report/}{State of Modern Applications \& DevSecOps} report.
+            \item Built a continuous integration pipeline for Partner Apps \href{https://github.com/SumoLogic/sumologic-public-partner-apps}{repo} using Jenkins on GKE and a \href{https://github.com/apps/sumopartners}{SumoPartners Github app}.It involved writing unit/API/UI tests, creating groovy based pipeline definitions for deploying apps \& running tests and a \href{https://pypi.org/project/sumologic-apptestutils/}{cli tool} for partner app developers.
             \item Wrote a Golang based cli client for running chaos experiments (random instance or dependent service failures, cpu, memory and network latency spikes) to test the resiliency of the services.
             \pagebreak
             \item Created \href{https://pypi.org/project/sumologic-appclient-sdk/}{Python SDK} for API-based data collection, incorporating a generic key-value store compatible with multiple cloud providers and on-premises environments, alongside flexible output handlers for HTTP, file, and console outputs. It streamlined the development and deployment of collection agents by enhancing reusability with common components like compression, batching, and logging, and is now utilized in over 8 integrations.
             \item Developed multiple \href{https://help.sumologic.com/docs/send-data/hosted-collectors/cloud-to-cloud-integration-framework/}{Cloud-to-Cloud Sources} to collect events and logs directly from SaaS and Cloud platforms by creating efficient Docker images that poll APIs and aggregate paginated data while managing authentication, scheduling, and state tracking. Prominent ones are
              \href{https://help.sumologic.com/docs/send-data/hosted-collectors/cloud-to-cloud-integration-framework/aws-cost-explorer-source/}{AWS Cost Explorer Source} and \href{https://help.sumologic.com/docs/send-data/hosted-collectors/cloud-to-cloud-integration-framework/salesforce-source/}{Salesforce Source}
-            \item Built a continuous integration pipeline for Partner Apps \href{https://github.com/SumoLogic/sumologic-public-partner-apps}{repo} using Jenkins on GKE and a \href{https://github.com/apps/sumopartners}{SumoPartners Github app}.It involved writing unit/API/UI tests, creating groovy based pipeline definitions for deploying apps \& running tests and a \href{https://pypi.org/project/sumologic-apptestutils/}{cli tool} for partner app developers.
+            \item Co-Developed the serverless Business Intelligence solution  using AWS Redshift \& AWS Lambda responsible for generating the annual \href{https://www.sumologic.com/brief/state-modern-apps-report/}{State of Modern Applications \& DevSecOps} report.
         \end{itemize}
     
     \textbf{TWS SYSTEMS PRIVATE LIMITED, Gurgaon}\\
@@ -147,7 +147,7 @@
   %  \item \textsl{Design and Development of Bidnbid.com - Online Real Estate Auction Platform}
     %    \begin{itemize}
             \item Developed Interactive Search using Solr's geospatial queries and Google Maps API.
-            \item Implemented a range of site-wide features to enhance user experience, including two-factor authentication, payment gateway integration, multi-select custom jQuery components, and developing SEO management dashboards to drive engagement and optimize search performance..
+            \item Implemented a range of site-wide features to enhance user experience, including two-factor authentication, payment gateway integration, multi-select custom jQuery components, and developing SEO management dashboards to drive engagement and optimize search performance.
       %  \end{itemize}
 
     \end{itemize}
